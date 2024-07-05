@@ -25,7 +25,7 @@ function onClick() {
       </v-app-bar>
 
       <v-main height="100vh">
-        <v-sheet></v-sheet>
+        <v-sheet :style="backgroundImage:'url(../assets/background.jpg')'"
       </v-main>
     </v-app>
   </v-responsive>

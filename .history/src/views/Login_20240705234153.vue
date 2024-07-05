@@ -7,7 +7,6 @@ function onClick() {
   theme.value = theme.value === 'light' ? 'dark' : 'light'
 }
 </script>
-
 <template>
   <v-responsive class="border rounded" max-height="300">
     <v-app :theme="theme">
@@ -24,8 +23,10 @@ function onClick() {
         ></v-btn>
       </v-app-bar>
 
-      <v-main height="100vh">
-        <v-sheet></v-sheet>
+      <v-main>
+        <v-container>
+          <h1>Main Content</h1>
+        </v-container>
       </v-main>
     </v-app>
   </v-responsive>

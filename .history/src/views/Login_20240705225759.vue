@@ -1,0 +1,56 @@
+<script></script>
+
+<template style="background-image: url('../components/img/background.png')">
+  <body>
+    <v-sheet
+      theme="dark"
+      :elevation="9"
+      :height="420"
+      :width="650"
+      location="center center"
+      :position="'absolute'"
+      class="rounded-lg"
+    >
+      <div class="pic">
+        <div class="submit">
+          <div class="QR"></div>
+        </div>
+      </div>
+    </v-sheet>
+  </body>
+</template>
+
+<style scoped>
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../components/img/background.png');
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  background-image: url('../components/img/background.png');
+}
+
+.submit {
+  width: 325px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  opacity: 0.8;
+}
+
+.QR {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 80px;
+  left: calc(50% - 55px);
+  background-color: aquamarine;
+}
+</style>

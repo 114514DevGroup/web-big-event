@@ -24,8 +24,10 @@ function onClick() {
         ></v-btn>
       </v-app-bar>
 
-      <v-main height="100vh">
-        <v-sheet></v-sheet>
+      <v-main>
+        <v-container>
+          <h1>Main Content</h1>
+        </v-container>
       </v-main>
     </v-app>
   </v-responsive>

@@ -24,9 +24,16 @@ function onClick() {
         ></v-btn>
       </v-app-bar>
 
-      <v-main height="100vh">
-        <v-sheet></v-sheet>
-      </v-main>
+      <v-main>
+        <v-container fluid>
+          <v-row align="center" justify="center">
+            <v-col cols="12" md="8">
+              <v-card>
+                <v-card-title>Login</v-card-title>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-container>
     </v-app>
   </v-responsive>
 </template>

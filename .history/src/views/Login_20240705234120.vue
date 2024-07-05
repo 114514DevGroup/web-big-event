@@ -7,13 +7,11 @@ function onClick() {
   theme.value = theme.value === 'light' ? 'dark' : 'light'
 }
 </script>
-
 <template>
   <v-responsive class="border rounded" max-height="300">
     <v-app :theme="theme">
       <v-app-bar class="px-3">
         <v-spacer></v-spacer>
-
         <v-btn
           :prepend-icon="
             theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'
@@ -23,10 +21,6 @@ function onClick() {
           @click="onClick"
         ></v-btn>
       </v-app-bar>
-
-      <v-main height="100vh">
-        <v-sheet></v-sheet>
-      </v-main>
     </v-app>
   </v-responsive>
 </template>

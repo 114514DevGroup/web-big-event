@@ -24,8 +24,13 @@ function onClick() {
         ></v-btn>
       </v-app-bar>
 
-      <v-main height="100vh">
-        <v-sheet></v-sheet>
+      <v-main height="100%">
+        <v-img
+          :width="400"
+          aspect-ratio="16/9"
+          cover
+          src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
+        ></v-img>
       </v-main>
     </v-app>
   </v-responsive>
