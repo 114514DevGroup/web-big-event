@@ -34,6 +34,6 @@
   height: 100%;
   background-color: #fff;
   position: absolute;
-  right: 0;
+  left: 0;
 }
 </style>

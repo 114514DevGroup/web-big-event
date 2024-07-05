@@ -30,10 +30,9 @@
 }
 
 .submit {
+  float: right;
   width: 325px;
   height: 100%;
   background-color: #fff;
-  position: absolute;
-  right: 0;
 }
 </style>
