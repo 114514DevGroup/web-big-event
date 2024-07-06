@@ -54,6 +54,7 @@ function onClick() {
       </v-sheet>
     </v-main>
   </v-layout>
+  <v-footer></v-footer>
 </template>
 
 <style>

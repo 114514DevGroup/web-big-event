@@ -54,6 +54,7 @@ function onClick() {
       </v-sheet>
     </v-main>
   </v-layout>
+  <v-footer>123123</v-footer>
 </template>
 
 <style>
@@ -66,7 +67,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  overflow: auto;
 }
 
 .main {

@@ -8,6 +8,24 @@ function onClick() {
 }
 </script>
 
+<!-- <template>
+  <v-responsive class="border rounded" max-height="300">
+    <v-app :theme="theme">
+      <v-app-bar class="px-3">
+        <v-spacer></v-spacer>
+        <v-btn
+          :prepend-icon="
+            theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'
+          "
+          text="Toggle Theme"
+          slim
+          @click="onClick"
+        ></v-btn>
+      </v-app-bar>
+    </v-app>
+  </v-responsive>
+</template> -->
+
 <template>
   <v-layout class="rounded rounded-md" :theme="theme" style="height: 100vh">
     <v-app-bar
@@ -66,7 +84,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  overflow: auto;
 }
 
 .main {
@@ -90,11 +107,12 @@ body {
 }
 
 .QR {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   background-color: #fff;
   position: absolute;
-  top: 60px;
-  left: calc(50% - 60px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 </style>
